@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+</head>
+<body>
+    <script>
+        function primeNumber(num) {
+        for (var divisor = 2; divisor < num; divisor++) 
+        if (num % divisor == 0) return false;
+        return true;
+        }
+        var determinadoNumero = Number(prompt("Digite um valor determinbado: "))
+
+        for (var i = 2; i < determinadoNumero; i++) 
+        if (primeNumber(i)) alert("Resultado: " + i);
+    </script>
+</body>
+</html>
+
+
+
+

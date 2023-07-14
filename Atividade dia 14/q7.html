@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01</title>
+</head>
+<body>
+    <script>
+        var i = 0, qtd = 0;
+do {
+    var n;
+    while(true) {
+        n = Number(prompt('digite um número: '));
+        if (isNaN(n)) alert('digite um número válido');
+        else break;
+    }
+    if (n > 0) {
+        qtd++;
+    }
+    i++;
+} 
+while(n > 0);
+
+var max = Math.max(n);
+var mim = Math.min(n);
+
+alert('indices ' + i)
+alert('indices ' + qtd)
+alert(`Maior: ${max} e o menor: ${mim}`)
+
+    </script>
+</body>
+</html>
+
+
